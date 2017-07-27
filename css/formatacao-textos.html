@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Fontes e Cores</title>
+
+    <style type="text/css">
+
+    p{
+      font-size: 30px;
+      font-family: "Georgia";
+    }
+
+    .texto{
+      font-size: 20px; /* px, % - significa o valor em porcentagem ao tamanho padrão da fonte, em - fica do tamanho do elemento que está por fora (proporcional)*/
+    }
+
+    .negrito{
+      font-weight: bold; /*o número de negrito varia entre 100 e 900*/
+    }
+
+    .estilo{
+      font-style: italic;
+      /*font-style: oblique;*/
+    }
+
+    .texto-padrao{
+      font: bold 40px "Palatino Linotype", "Book Antiqua", Palatino, serif; /*permite adicionar todos os tipos de formatação em um lugar*/
+    }
+
+    .formatacao{
+      text-decoration: underline;
+      text-decoration: overline;
+      text-decoration: line-through;
+    }
+
+    </style>
+
+  </head>
+  <body>
+
+    <table border="1" width="100%">
+      <th><a href="../index.html"> Home </a></th>
+      <th><a href="../contato.html"> Contato </a></th>
+      <th><a href="../tabela.html"> Tabelas </a></th>
+      <th><a href="../formularios.html"> Formulários </a></th>
+      <th><a href="../quem-somos.html">Quem somos</a></th>
+      <th><a href="../quem-somos.html">Quem somos</a></th>
+    </table><br>
+
+    <table border="1" width="100%">
+      <th><a href="inline_style.html">Inline Style</a> | </th>
+      <th><a href="span-div.html">Span e Div</a> | </th>
+      <th><a href="bordas.html">Bordas</a> | </th>
+      <th><a href="fontes-cores.html">Fontes e cores</a></th>
+    </table><br>
+
+    <p class="texto">Lorem ipsum <span class="formatacao">dolor</span> sit amet, consectetur adipiscing elit.</p>
+    <p class="negrito">Conteúdo 1</p>
+    <p>Conteúdo 2</p>
+    <p class="estilo">Conteúdo 3</p>
+    <p class="texto-padrao">Conteúdo 4</p>
+    
+  </body>
+</html>
