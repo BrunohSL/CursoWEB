@@ -13,7 +13,36 @@
       background: #ffffff;
       padding: 10px;
       width: 600px;
+
       margin-left: 30px auto;
+    }
+
+    .caixa{
+      background: #1e6f44;
+      width: 200px;
+      height: 200px;
+      color: #ffffff;
+    }
+
+    #relativo{
+      position: relative;
+      left: -30px;
+      top: 0;
+      width: 660px;
+    }
+
+    #absolute{
+      position: absolute;
+      bottom: : 0;
+      right: : 0;
+    }
+
+    #fixed{
+      position: fixed;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 5%;
     }
 
     </style>
@@ -37,6 +66,15 @@
 
     <div id="conteudo-principal">
       <h1>Posicionamento</h1>
+
+      <h4>Relative</h4>
+      <div id="relativo" class="caixa">Relative</div>
+
+      <h4>Absolute</h4>
+      <div id="absolute" class="caixa">Absolute</div>
+
+      <h4>Fixed</h4>
+      <div id="fixed" class="caixa">Fixed</div>
     </div>
 
   </body>
