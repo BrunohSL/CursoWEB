@@ -1,0 +1,1 @@
+alert("teste de js em arquivo externo");
