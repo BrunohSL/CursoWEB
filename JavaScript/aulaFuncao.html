@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="pt-br">
+	<head>
+		<title>JavaScript</title>
+		<meta charset="utf-8">
+
+		<!-- Normalize CSS -->
+		<link rel="stylesheet" type="text/css" href="css/normalize.css">
+		
+		<!-- Estilo customizado -->
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+
+        <script type="text/javascript">
+            
+            var num1 = 2;
+            var num2 = 4;
+            var soma = calculaSoma(num1, num2);
+            document.write(soma);
+            
+            function calculaSoma(num1, num2){
+                num1 = parseFloat(num1);
+                num2 = parseFloat(num2);
+                
+                var soma = num1 + num2;
+
+                return soma;
+            }
+
+        </script>
+
+		<!--[if IE]>
+			<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+		<![endif]-->
+
+	</head>
+
+	<body>
+		
+	</body>
+
+</html>

@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="pt-br">
+	<head>
+		<title>JavaScript</title>
+		<meta charset="utf-8">
+
+		<!-- Normalize CSS -->
+		<link rel="stylesheet" type="text/css" href="css/normalize.css">
+		
+		<!-- Estilo customizado -->
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+
+        <script type="text/javascript">
+
+            // EVENTOS DE MOUSE:
+            // onclick
+            // ondblclick
+            // onmousedown
+            // onmouseover
+            // onmouseout
+
+            // EVENTOS DE TECLADO
+            // onkeydown
+            // onkeypress
+            // onkeyup
+
+            // EVENTOS DE JANELA
+            // onload - atributo do body
+            // onresize - atributo do body
+
+            // EVENTOS DE FORMULÁRIOS
+            // onfocus
+            // onblur
+            // onchange
+
+            function msgBoasVindas(){
+                alert("Você clicou na DIV");
+            }
+
+        </script>
+		<!--[if IE]>
+			<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+		<![endif]-->
+	</head>
+	<body onload="alert('A págin foi carregada')" onresize="console.log('A página foi redimensionada')">
+        <div onclick="msgBoasVindas()" onmouseout="msgBoasVindas()" style="background: #CCC; height: 150px; width: 150px"></div>
+        
+        <input onkeydown="alert('uma tecla foi pressionada')" type="text">
+
+        <input onfocus="alert('O elemento foi focado');" onblur="('O elemento perdeu o foco');" type="text">
+
+        <select onchange="alert('A opção foi alterada')">
+            <option value="1"></option>
+            <option value="2"></option>
+        </select>
+	</body>
+
+</html>
