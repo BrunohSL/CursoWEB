@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Eventos de jquery</title>
+
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+
+    <script type="text/javascript">
+        
+        $(document).ready(function(){
+
+// ------------------- Eventos de mouse----------------------//
+            //click
+            //dblclick
+            //mousedown
+            //mouseover
+            //mouseout
+
+            $('#div1').click(function(){
+                alert("Elemento foi clicado");
+            });
+
+            $('#div1').dblclick(function(){
+                alert("Elemento foi clicado 2x");
+            });
+
+            $('#div1').mousedown(function(){
+                alert("Click mouse down");
+            });
+
+            $('#div1').mouseover(function(){
+                alert("O mouse está em cima");
+            });
+
+            $('#div1').mouseout(function(){
+                alert("O mouse saiu da div");
+            });
+
+// ------------------- Eventos de Teclado----------------------//
+
+            //keydown
+            //keypress
+            //keyup
+
+            $('#campo1').keydown(function(){
+                alert("Uma tecla foi pressionada");
+            });
+
+            $('#campo1').keypress(function(){
+                alert("Uma tecla normal foi pressionada");
+            });
+
+            $('#campo1').keyup(function(){
+                alert("Uma tecla foi liberada");
+            });
+
+// ------------------- Eventos de Teclado----------------------//
+
+            //focus - acionada quando o elemento recebe o foco do cursor
+            //blur - acionada quando o elemento perde o foco do cursor
+            //change - acionada quando o estado do elemento é modificado
+
+            $('.campo2').focus(function(){
+                alert("O input recebeu o foco");
+            });
+
+            $('.campo2').blur(function(){
+                alert("O input perdeu o foco");
+            });
+
+            $('#combo1').change(function(){
+                alert("Estado alterado do ComboBox");
+            });
+
+
+        });
+
+    </script>
+
+</head>
+<body>
+    <div id="div1" style="height:150px; width:150px; background: #CCC"></div>
+
+    <input id="campo1" type="text">
+    <hr>
+    <input class="campo2" type="text">
+    <hr>
+    <select name="comboTeste" id="combo1">
+        <option value="1">Teste 1</option>
+        <option value="2">Teste 2</option>
+    </select>
+</body>
+</html>
